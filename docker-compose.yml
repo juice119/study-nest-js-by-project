@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_DB: blog
+      POSTGRES_USER: back-end-server
+      POSTGRES_PASSWORD: test1234
+    ports:
+      - "5432:5432"
