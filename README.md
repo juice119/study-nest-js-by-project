@@ -1,23 +1,30 @@
 # 파일 구조
-1.app
 
-2. ApplicationModule.ts
 
-2. libs
+## app
+
+### src
+
+#### libs
 - 공용 라이브 개발용
 
-2. module
-   1. {domainName}
-      1. Service
-         1. ServiceClassFile
-      2. ControllerFile
-      3. Request
-         1. RequestNameFile
-      4. Dto
-         1. DtoFile
+#### modules
 
-3. entity
-- 데이터 베이스 enti
-  1. 테이블 이름 클래스 파일
+도메인 로직을 수행하는 컨트롤러, 서비스, 모듈이 모여있는 곳
+   1. {domainName}
+      1. ControllerFile
+      2. ServiceClassFile
+      3. RepositoryFile
+      4. Request
+         1. RequestNameFile
+      5. Dto
+         1. DtoFile
+   2. main.ts
+
+   3. ApplicationModule.ts
+
+#### models
+
+### test
 
 

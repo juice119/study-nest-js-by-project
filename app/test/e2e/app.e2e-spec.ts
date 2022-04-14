@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
-import { MainPageModule } from '../../src/module/mainPage/MainPageModule';
+import { MainPageModule } from '../../src/modules/mainPage/MainPageModule';
 
 describe('MainPageController (e2e)', () => {
   let app: INestApplication;
