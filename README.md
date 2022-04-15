@@ -23,7 +23,7 @@
 
    3. ApplicationModule.ts
 
-#### models
+#### entities
 
 ### test
 
