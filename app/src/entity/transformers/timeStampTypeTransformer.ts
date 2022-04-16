@@ -1,19 +1,14 @@
 import { ValueTransformer } from 'typeorm/decorator/options/ValueTransformer';
-import { LocalDateTime } from '@js-joda/core';
+import { LocalDateTime, nativeJs } from '@js-joda/core';
 
 export class TimeStampTypeTransformer implements ValueTransformer {
-  from(value: LocalDateTime): LocalDateTime {
-    return value;
+  from(value: Date): LocalDateTime | null {
+    if (!value) return null;
+
+    return LocalDateTime.from(nativeJs(value));
   }
 
-  to(value: Date): LocalDateTime {
-    return LocalDateTime.of(
-      value.getFullYear(),
-      value.getMonth(),
-      value.getDay(),
-      value.getHours(),
-      value.getMinutes(),
-      value.getSeconds(),
-    );
+  to(value: LocalDateTime): any {
+    return value;
   }
 }
