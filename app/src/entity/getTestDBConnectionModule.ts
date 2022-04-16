@@ -11,7 +11,7 @@ export function getTestDBConnectionModule(): DynamicModule {
     username: 'back-end-server',
     password: 'test1234',
     database: 'blog',
-    entities: ['dist/**/*.entities{.ts,.js}'],
+    entities: ['dist/entity/domain/**/*.entity{.js, .ts}'],
 
     // 라이브에서는 끄기
     synchronize: true,

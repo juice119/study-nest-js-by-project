@@ -1,4 +1,4 @@
-import { getTestDBConnectionModule } from '../src/getTestDBConnectionModule';
+import { getTestDBConnectionModule } from '../../entity/getTestDBConnectionModule';
 import { Test } from '@nestjs/testing';
 
 describe('getTestDBConnectionModule.ts', () => {

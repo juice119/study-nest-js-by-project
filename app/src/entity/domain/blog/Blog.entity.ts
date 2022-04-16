@@ -5,14 +5,12 @@ import {
   Entity,
   PrimaryGeneratedColumn,
 } from 'typeorm';
+import { TimeStampTypeTransformer } from '../../transformers/timeStampTypeTransformer';
 import { LocalDateTime } from '@js-joda/core';
-import { IdTransformer } from '../../libs/src/transformers/IdTransformer';
-import { TimeStampTypeTransformer } from '../../libs/src/transformers/timeStampTypeTransformer';
 
 @Entity({ name: 'blog' })
 export class BlogEntity {
   @PrimaryGeneratedColumn({ type: 'bigint' })
-  @Column({ transformer: new IdTransformer() })
   id: BigInteger;
 
   @Column({ type: 'varchar', length: 50 })

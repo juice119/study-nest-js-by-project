@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { getTestDBConnectionModule } from './libs/src/getTestDBConnectionModule';
+import { getTestDBConnectionModule } from './entity/getTestDBConnectionModule';
 import { MainPageModule } from './modules/mainPage/MainPageModule';
 
 @Module({

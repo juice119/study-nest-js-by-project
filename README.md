@@ -5,6 +5,11 @@
 
 ### src
 
+#### entity
+  1. domain
+     1. {domainName}/{modelName}.entity.ts
+  2. transformer
+
 #### libs
 - 공용 라이브 개발용
 
@@ -27,4 +32,8 @@
 
 ### test
 
+
+# 파일 이름 형식
+ - Entity `이름.entity.js`
+ - 
 
