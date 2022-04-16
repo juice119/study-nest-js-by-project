@@ -6,8 +6,8 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { LocalDateTime } from '@js-joda/core';
-import { IdTransformer } from '../libs/src/transformers/IdTransformer';
-import { TimeStampTypeTransformer } from '../libs/src/transformers/timeStampTypeTransformer';
+import { IdTransformer } from '../../libs/src/transformers/IdTransformer';
+import { TimeStampTypeTransformer } from '../../libs/src/transformers/timeStampTypeTransformer';
 
 @Entity({ name: 'blog' })
 export class BlogEntity {
