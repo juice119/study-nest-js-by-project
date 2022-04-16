@@ -11,7 +11,7 @@ import { LocalDateTime } from '@js-joda/core';
 @Entity({ name: 'blog' })
 export class BlogEntity {
   @PrimaryGeneratedColumn({ type: 'bigint' })
-  id: BigInteger;
+  id: number;
 
   @Column({ type: 'varchar', length: 50 })
   title: string;
